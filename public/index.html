@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Insekta Learning Platform</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.compiled.css">
+<link rel="icon" href="img/insekta-32.png">
+</head>
+<body>
+	<div class="header">
+		<img src="img/insekta-glowing.png" alt="Insekta logo" class="h-24 py-2">
+		<div class="ml-4 mt-4">
+			<h1>Insekta Learning Platform</h1>
+			<p class="subtitle">Create explanatory texts with fully customized tasks.</p>
+		</div>
+	</div>
+
+	<div class="page-content">
+
+	<div class="teaser">
+		<p class="text-xl">
+		Insekta is an open-source learning platform where teachers can provide explanatory texts that contain integrated tasks.
+		Tasks are not restricted to multiple-choice but are fully programmable and customizable on a per-student basis.
+		At the University of Bamberg, several hundred students have learned and are learning with Insekta.
+		</p>
+
+		<p class="mt-10 text-center">
+		<a href="https://github.com/Insekta" class="btn">Visit GitHub project site</a>
+		</p>
+	</div>
+
+	<h2 class="feature-heading">Selected Features</h2>
+	<div class="feature-container">
+		<div class="feature-text-column">
+			<h3>Design learning topics using a Domain Specific Language</h3>
+			<p>
+			Learning topics are simple HTML files that are extended with a custom Domain Specific Language (DSL) based on the <a class="link" href="https://jinja.palletsprojects.com">Jinja template system</a>.  To include a task, teachers describe the task using pre-defined functions inline without breaking their workflow. The DSL allows single and multiple-choice questions, text and script-verified questions, and much more. Students may feel overwhelmed by too much text; therefore, the DSL allows parts of the text to be hidden until a specific task has been solved. For full flexibility, teachers can include custom CSS and JavaScript. Everything is easily manageable in a version control system such as Git.
+
+			</p>
+		</div>
+		<div class="feature-image-column">
+			<div class="feature-image-container">
+				<img src="img/dsl.png" alt="Domain Specific Language example" class="feature-image">
+			</div>
+		</div>
+	</div>
+	<div class="feature-container">
+		<div class="feature-text-column">
+			<h3>Provide feedback for the learning progress</h3>
+			<p>Students can estimate their progress with each learning topic by clearly seeing how many tasks they already have solved. Teachers get an overview of how their students in the course are performing and what their progress is. Insekta also allows calculating bonus points to incentivize solving tasks.</p>
+		</div>
+		<div class="feature-image-column">
+			<div class="feature-image-container">
+				<img src="img/tasks.png" alt="Progress bar for students" class="feature-image">
+			</div>
+		</div>
+	</div>
+	<div class="feature-container">
+		<div class="feature-text-column">
+			<h3>Create fully scriptable tasks</h3>
+			<p>Insekta allows teachers to write custom Python scripts that validate the students’ answers. The script cannot only accept or decline but also provide textual feedback for the students, e.g., helping them when their solution is close. In addition, each script has access to a random number generator that is seeded with the student’s identity to create individual tasks.</p>
+
+		</div>
+		<div class="feature-image-column">
+			<div class="feature-image-container bg-[#f8f8f5]">
+				<img src="img/script.png" alt="Example for verification script" class="feature-image">
+			</div>
+		</div>
+	</div>
+	<div class="feature-container">
+		<div class="feature-text-column">
+			<h3>Run virtual machines for students</h3>
+			<p>Insekta was originally designed while having IT security teaching in mind. For that purpose, teachers can create virtual machine templates with vulnerable services that can be accessed by students. Given a template, students can start their own virtual machine instance, which can only be accessed by them via an OpenVPN connection. Furthermore, all changes to virtual machines are only ephemeral, allowing students to reset their machine if they bricked it. For best isolation, full virtualization with KVM is used.</p>
+		</div>
+		<div class="feature-image-column">
+			<div class="feature-image-container">
+				<img src="img/vms.png" alt="Lernfortschrittsanzeige" class="feature-image rounded">
+			</div>
+		</div>
+	</div>
+
+	<div class="imprint">
+		<h2>Impressum</h3>
+		<div class="mb-1">
+			Prof. Dr. Dominik Herrmann<br>
+		<span class="italic">Lehrstuhl für Privatsphäre und Sicherheit<br>
+			in Informationssystemen</span>
+		</div>
+
+		<div class="mb-1">
+		Universität Bamberg<br>
+		Kapuzinerstr. 16<br>
+		96047 Bamberg
+		</div>
+
+		<p><a class="italic text-blue-400" href="https://www.uni-bamberg.de/psi/kontaktnavigation/impressum/">weitere Angaben</a></p>
+	</div>
+	</div>
+</body>
+</html>

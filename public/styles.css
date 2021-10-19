@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	hyphens: none;
+}
+
+.header {
+	@apply flex pl-4 shadow;
+	background-image: url(img/background.jpg);
+	background-repeat: repeat-x;
+}
+
+.header h1 {
+	@apply text-blue-100 text-2xl font-medium
+}
+
+.header .subtitle {
+	@apply text-blue-200
+}
+
+.page-content {
+	@apply ml-4 mr-4 max-w-4xl
+}
+
+.teaser {
+	@apply max-w-md mb-16 mt-12
+}
+
+.teaser .btn {
+	@apply border border-blue-900 rounded px-3 py-2 bg-blue-700 text-blue-100
+}
+
+.feature-heading {
+	@apply mb-6 text-3xl italic text-blue-800 font-serif
+}
+
+.feature-container {
+	@apply md:flex mb-8
+}
+
+.feature-text-column {
+	@apply max-w-lg md:max-w-full md:w-3/5 md:mr-8
+}
+
+.feature-image-column {
+	@apply max-w-md md:max-w-full md:w-2/5
+}
+
+.feature-text-column h3 {
+	@apply font-medium md:text-lg text-blue-900 mb-1
+}
+
+.feature-text-column p {
+	@apply font-serif md:text-lg
+}
+
+.feature-text-column .link {
+	@apply text-blue-800
+}
+
+.feature-image-container {
+	@apply rounded shadow px-2 py-2
+
+}
+
+.feature-image {
+	@apply w-full object-cover
+}
+
+.imprint {
+	@apply mt-8 text-gray-600 text-sm mb-4
+
+}
+
+.imprint h2 {
+	@apply font-bold mb-1
+}
