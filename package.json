@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "TAILWIND_MODE=watch postcss public/styles.css --config postcss.config.js -o public/styles.compiled.css --watch",
-    "build": "postcss public/styles.css -o public/styles.compiled.css --minify"
+    "dev": "TAILWIND_MODE=watch postcss docs/styles.css --config postcss.config.js -o docs/styles.compiled.css --watch",
+    "build": "postcss docs/styles.css -o docs/styles.compiled.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",
