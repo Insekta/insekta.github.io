@@ -609,9 +609,9 @@ video {
 }
 
 body {
-	-webkit-hyphens: none;
-	    -ms-hyphens: none;
-	        hyphens: none;
+	-webkit-hyphens: manual;
+	    -ms-hyphens: manual;
+	        hyphens: manual;
 }
 
 .header {
