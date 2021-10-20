@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-	@apply flex pl-4 shadow;
+	@apply flex pl-4 lg:pl-16 shadow;
 	background-image: url(img/background.jpg);
 	background-repeat: repeat-x;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .page-content {
-	@apply ml-4 mr-4 max-w-4xl
+	@apply ml-4 mr-4 max-w-4xl lg:ml-16
 }
 
 .teaser {
