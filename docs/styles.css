@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-	@apply flex pl-4 lg:pl-16 shadow;
+	@apply pl-4 py-3 lg:pl-16 shadow;
 	background-image: url(img/background.jpg);
 	background-repeat: repeat-x;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 .header .subtitle {
-	@apply text-blue-200
+	@apply text-blue-200 leading-tight
 }
 
 .page-content {
